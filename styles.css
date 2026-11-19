@@ -1,0 +1,61 @@
+:root { --navy:#082c4c; --deep:#061f36; --gold:#eab64d; --cream:#f8f6f0; --text:#18364d; --muted:#6b7c88; --white:#fff; }
+* { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; }
+body { color:var(--text); background:var(--cream); font-family:'DM Sans',Arial,sans-serif; line-height:1.6; }
+.container { width:min(1120px, calc(100% - 40px)); margin:auto; }
+a { color:inherit; text-decoration:none; }
+.site-header { background:var(--navy); color:var(--white); }
+.navbar { display:flex; align-items:center; justify-content:space-between; min-height:76px; }
+.brand { display:flex; align-items:center; gap:10px; font-size:1.1rem; font-weight:500; letter-spacing:-.3px; }
+.brand b { color:var(--gold); font-weight:700; }
+.brand-mark { display:grid; place-items:center; width:34px; height:34px; border:2px solid var(--gold); border-radius:50%; color:var(--gold); font-family:Georgia,serif; font-size:1.3rem; }
+.nav-links { display:flex; align-items:center; gap:30px; font-size:.9rem; }
+.nav-links a:not(.nav-button) { opacity:.85; }
+.nav-links a:hover { color:var(--gold); }
+.nav-button,.primary-button { background:var(--gold); color:var(--deep); border-radius:5px; padding:12px 19px; font-weight:700; }
+.menu-toggle { display:none; border:0; background:none; color:var(--white); font-size:1.5rem; }
+.hero { overflow:hidden; background:var(--navy); color:var(--white); min-height:480px; }
+.hero-content { display:flex; align-items:center; justify-content:space-between; min-height:480px; }
+.hero-copy { max-width:620px; padding:55px 0; }
+.eyebrow { color:var(--gold); font-size:.73rem; font-weight:700; letter-spacing:2px; margin-bottom:13px; }
+h1,h2 { font-family:'Playfair Display',Georgia,serif; line-height:1.12; }
+h1 { font-size:clamp(2.5rem,6vw,4.7rem); letter-spacing:-1.5px; }
+h1 em { color:var(--gold); font-style:normal; }
+.hero-text { color:#d5e0e7; max-width:500px; margin:23px 0 30px; font-size:1.08rem; }
+.primary-button { display:inline-flex; gap:20px; align-items:center; }
+.primary-button span { font-size:1.3rem; }
+.hero-art { position:relative; width:360px; height:340px; margin-right:40px; }
+.sun { position:absolute; width:190px; height:190px; top:40px; right:22px; border-radius:50%; background:var(--gold); opacity:.95; }
+.door { position:absolute; width:170px; height:278px; bottom:0; left:42px; border-radius:80px 80px 0 0; background:#fff; border:10px solid #dfe9ea; box-shadow:35px 22px 0 #15476a; }
+.door-knob { position:absolute; right:22px; top:145px; width:12px; height:12px; border-radius:50%; background:var(--gold); }
+.plant { position:absolute; bottom:5px; right:15px; color:#b9d1c4; font-size:4rem; transform:rotate(-25deg); }
+.trust-bar { background:#fff; color:var(--muted); font-size:.8rem; }
+.trust-content { display:flex; justify-content:space-between; padding:17px 0; gap:15px; }
+.section { padding:85px 0; }
+.section-heading { display:flex; justify-content:space-between; align-items:end; margin-bottom:30px; }
+h2 { color:var(--navy); font-size:clamp(2rem,4vw,2.8rem); }
+.text-link { color:var(--navy); font-weight:700; font-size:.9rem; }
+.search-panel { background:#fff; padding:22px; border-radius:8px; margin-bottom:28px; box-shadow:0 6px 25px #18364d0d; }
+.search-panel label { display:block; font-size:.8rem; font-weight:700; margin-bottom:8px; }
+.search-row { display:flex; gap:13px; }
+.search-box { position:relative; flex:1; }
+.search-box span { position:absolute; left:14px; top:8px; color:var(--gold); font-size:1.5rem; }
+input,select { width:100%; border:1px solid #d8e0e3; border-radius:4px; background:#fff; color:var(--text); padding:13px 15px; font:inherit; }
+.search-box input { padding-left:45px; }
+select { max-width:220px; }
+.scholarship-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.scholarship-card { background:#fff; border-radius:7px; padding:23px; border-top:4px solid var(--gold); box-shadow:0 5px 20px #18364d0b; }
+.card-category { color:#ad7a08; font-size:.68rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; }
+.scholarship-card h3 { color:var(--navy); font-size:1.15rem; line-height:1.3; margin:12px 0 10px; }
+.scholarship-card p { color:var(--muted); font-size:.88rem; min-height:48px; }
+.card-meta { display:flex; justify-content:space-between; border-top:1px solid #edf0ef; margin-top:17px; padding-top:14px; font-size:.75rem; color:var(--muted); }
+.card-meta strong { color:var(--navy); display:block; }
+.empty-state { text-align:center; color:var(--muted); padding:30px; }
+.categories { background:#fff; }
+.category-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.category-card { position:relative; overflow:hidden; min-height:210px; padding:27px; border-radius:7px; color:var(--white); background:var(--navy); }
+.category-card.postgraduate { background:#b98320; }.category-card.funded { background:#24617d; }
+.category-icon { color:var(--gold); font-size:1.5rem; }.category-card h3 { font-family:'Playfair Display',serif; font-size:1.45rem; margin:18px 0 5px; }.category-card p { max-width:230px; color:#f5f5f5; font-size:.85rem; }.arrow { position:absolute; right:27px; bottom:24px; font-size:1.4rem; color:var(--gold); }
+.about-box { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }.about-box > p { font-size:1.12rem; color:var(--muted); }
+footer { background:var(--deep); color:#c7d5dc; padding:30px 0; }.footer-content { display:flex; align-items:center; justify-content:space-between; gap:20px; font-size:.8rem; }
+@media (max-width:760px) { .container { width:min(100% - 30px,560px); }.menu-toggle { display:block; }.nav-links { display:none; position:absolute; z-index:5; top:76px; left:0; right:0; padding:20px; background:var(--deep); flex-direction:column; align-items:stretch; text-align:center; }.nav-links.open { display:flex; }.hero-content { min-height:650px; display:block; }.hero-copy { padding-top:70px; }.hero-art { width:290px; height:230px; margin:15px auto 0; transform:scale(.8); transform-origin:top center; }.trust-content { flex-wrap:wrap; justify-content:center; }.trust-content span:not(:first-child) { font-size:.72rem; }.section { padding:60px 0; }.section-heading { align-items:start; gap:15px; flex-direction:column; }.search-row { flex-direction:column; } select { max-width:none; }.scholarship-grid,.category-grid { grid-template-columns:1fr; }.about-box { grid-template-columns:1fr; gap:20px; }.footer-content { align-items:flex-start; flex-direction:column; } }

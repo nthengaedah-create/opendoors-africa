@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OpenDoors Africa helps Zambian students discover scholarships and educational opportunities.">
+  <title>OpenDoors Africa | Scholarship Opportunities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">O</span><span>OpenDoors <b>Africa</b></span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#opportunities">Opportunities</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About us</a>
+        <a class="nav-button" href="#opportunities">Find a scholarship</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR FUTURE STARTS HERE</p>
+          <h1>Open a door to your <em>next opportunity.</em></h1>
+          <p class="hero-text">Discover scholarships and educational opportunities designed to help Zambian students reach their full potential.</p>
+          <a class="primary-button" href="#opportunities">Explore opportunities <span>→</span></a>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a student opening a door" role="img">
+          <div class="sun"></div><div class="door"><div class="door-knob"></div></div><div class="plant">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar"><div class="container trust-content"><span>Helping students move forward</span><span>✓ Curated opportunities</span><span>✓ Built for Zambia</span><span>✓ Always free to search</span></div></section>
+
+    <section class="opportunities section" id="opportunities">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">FIND YOUR FIT</p><h2>Featured opportunities</h2></div><a class="text-link" href="#opportunities">View all opportunities →</a></div>
+        <div class="search-panel"><label for="search">Search scholarships</label><div class="search-row"><div class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Try “engineering” or “Canada”"></div><select id="category" aria-label="Filter by category"><option value="all">All categories</option><option value="undergraduate">Undergraduate</option><option value="postgraduate">Postgraduate</option><option value="fully-funded">Fully funded</option></select></div></div>
+        <div class="scholarship-grid" id="scholarship-list"></div><p class="empty-state" id="empty-state" hidden>No opportunities match your search. Try another keyword or category.</p>
+      </div>
+    </section>
+
+    <section class="categories section" id="categories"><div class="container"><div class="section-heading"><div><p class="eyebrow">EXPLORE BY LEVEL</p><h2>Find the right path</h2></div></div><div class="category-grid"><a href="#opportunities" class="category-card undergraduate"><span class="category-icon">✦</span><h3>Undergraduate</h3><p>Start your journey with support for your first degree.</p><span class="arrow">→</span></a><a href="#opportunities" class="category-card postgraduate"><span class="category-icon">◒</span><h3>Postgraduate</h3><p>Take your expertise further with advanced study.</p><span class="arrow">→</span></a><a href="#opportunities" class="category-card funded"><span class="category-icon">◆</span><h3>Fully funded</h3><p>Find opportunities that cover your study costs.</p><span class="arrow">→</span></a></div></div></section>
+
+    <section class="about section" id="about"><div class="container about-box"><div><p class="eyebrow">OUR MISSION</p><h2>Education opens every door.</h2></div><p>OpenDoors Africa makes it easier for Zambian students to discover trusted opportunities in one simple place. Your ambition deserves a clear path forward.</p></div></section>
+  </main>
+
+  <footer><div class="container footer-content"><a class="brand" href="index.html"><span class="brand-mark">O</span><span>OpenDoors <b>Africa</b></span></a><p>Opening doors to brighter futures.</p><p>© 2026 OpenDoors Africa</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
